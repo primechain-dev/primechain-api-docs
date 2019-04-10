@@ -1,67 +1,133 @@
-<!doctype html>
-<!--
+<h1 id="primechainapi">Primechain API</h1>
 
-  Instructions:
+<p><a href="http://www.primechaintech.com/"><img src="https://img.shields.io/badge/Built%20by-Primechain-blue.svg" alt="Primechain API" /></a></p>
 
-  - Save this file.
-  - Replace "USER" with your GitHub username.
-  - Replace "REPO" with your GitHub repo name.
-  - Replace "Your Project" with your project name.
-  - Upload this file (or commit to GitHub Pages).
+<p>Primechain APIs make it very simple for developers to add blockchain power to their code - smart asset lifecycle management, electronic signatures, encrypted data storage &amp; more.</p>
 
-  Customize as you see fit!
+<p><img src="http://www.primechaintech.com/images/projects/api-github.png" alt="Primechain-API" /></p>
 
--->
-<html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
+<p><a href="https://twitter.com/intent/tweet?text=Add%20blockchain%20power%20to%20your%20code%20in%20minutes%20with%20primechain-api&amp;url=https://github.com/Primechain/primechain-api&amp;via=primechain&amp;hashtags=blockchain,api"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="Tweet" /></a></p>
 
-  <title>Primechain-API Documentation</title>
+<ol>
+<li><a href="#1-introduction">Introduction</a></li>
 
-  <!-- Flatdoc -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/legacy.js'></script>
-  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/flatdoc.js'></script>
+<li><a href="#2-primechain-api-use-cases">Primechain-API use cases</a></li>
 
-  <!-- Flatdoc theme -->
-  <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
-  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
+<li><a href="#3-documentation">Documentation</a></li>
 
-  <!-- Meta -->
-  <meta content="Primechain-API Documentation" property="og:title">
-  <meta content="This document explains the Endpoints of Primechain-API." name="description">
+<li><a href="#4-sandbox">Sandbox</a></li>
 
-  <!-- Initializer -->
-  <script>
-    Flatdoc.run({
-      fetcher: Flatdoc.github('primechain-dev/primechain-api-docs')
-    });
-  </script>
-</head>
-<body role='flatdoc'>
+<li><a href="#5-about-primechain-technologies">About Primechain Technologies</a></li>
+</ol>
 
-  <div class='header'>
-    <div class='left'>
-      <h1>Primechain-API Documentation</h1>
-      <ul>
-        <li><a href='https://github.com/primechain-dev/primechain-api-docs'>View on GitHub</a></li>
-        <li><a href='https://github.com/primechain-dev/primechain-api-docs/issues'>Issues</a></li>
-      </ul>
-    </div>
-    <div class='right'>
-      <!-- GitHub buttons: see http://ghbtns.com -->
-      <iframe src="http://ghbtns.com/github-btn.html?user=primechain-dev&amp;repo=primechain-api-docs&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-    </div>
-  </div>
+<h1 id="1introduction">1. Introduction</h1>
 
-  <div class='content-root'>
-    <div class='menubar'>
-      <div class='menu section' role='flatdoc-menu'></div>
-    </div>
-    <div role='flatdoc-content' class='content'></div>
-  </div>
+<p>Today, the Internet enables the movement of data (videos, text, photos and more) globally in milliseconds. But try moving value (money, loyalty points etc.) and you will be surprised by the costs, inefficiencies and time delays.</p>
 
-</body>
-</html>
+<p>Blockchain is a revolutionary technology that enables "internets of value" that can move value in seconds - money, loyalty points, equity shares, bonds, coupons, votes, intellectual property and much more.</p>
+
+<p>Blockchain solutions can be permissioned (e.g. a Government run land registry) or permission-less (e.g. Bitcoin, where anyone can become a miner). Blockchain solutions can be private (e.g. a contract management system implemented in a pharmaceutical company), public (e.g. an asset backed cryptocurrency) or hybrid (e.g. a group of banks running a shared KYC platform). </p>
+
+<h2 id="11blockchainbenefits">1.1 Blockchain benefits</h2>
+
+<ol>
+<li><p>Blockchain removes the characteristic of infinite reproducibility from a digital asset. It confirms that each unit of value was transferred only once, solving the long-standing problem of double spending.</p></li>
+
+<li><p>A single blockchain transaction can perform multiple asset exchanges between two or more parties. The exchange takes place in a single transaction, and comes with a guarantee of atomicity aka delivery-versus-payment, meaning that all of the asset transfers take place simultaneously, or none take place at all. This enabled real-time automated settlement and removes the need for reconciliation.</p></li>
+
+<li><p>A blockchain can assign title rights because it provides a record that compels offer and acceptance.</p></li>
+
+<li><p>By storing data across its network, a blockchain eliminates the risks that come with data being held centrally. </p></li>
+
+<li><p>The use of public key cryptography, symmetric cryptography and cryptographic hash functions makes blockchains cryptographically secure and provably immutable.</p></li>
+
+<li><p>Blockchains improves client satisfaction through faster, more convenient and secure services.</p></li>
+
+<li><p>Blockchains maximizes efficiency, security &amp; transparency and minimizes fraud.</p></li>
+
+<li><p>Blockchains accelerates information and money flows.</p></li>
+
+<li><p>Blockchains greatly improve auditability and streamlines paperwork.</p></li>
+</ol>
+
+<h2 id="12blockchainpainpoints">1.2 Blockchain pain points</h2>
+
+<p>Blockchain is a world-changing technology, but it suffers from some pain points:</p>
+
+<ol>
+<li><p>Installing, configuring, securing, troubleshooting, updating, and maintaining a blockchain ecosystem is a complex and time consuming task.</p></li>
+
+<li><p>There are 100+ blockchains and distributed ledger systems to choose from.</p></li>
+
+<li><p>Building blockchain solutions from the ground up is very expensive and time consuming.</p></li>
+
+<li><p>There is a severe shortage of skilled blockchain developers.</p></li>
+</ol>
+
+<h2 id="13primechainapi">1.3 Primechain API</h2>
+
+<p>Primechain APIs are RESTful JSON APIs for interacting with blockchains that allow developers to add blockchain power to their solutions in minutes.</p>
+
+<p><strong><em>Benefits of using Primechain-API:</em></strong></p>
+
+<ol>
+<li><p>Save months of development time.</p></li>
+
+<li><p>Reduce the development cycle.</p></li>
+
+<li><p>Vastly increase the security of your applications.</p></li>
+
+<li><p>Vastly increase the scalability of your applications.</p></li>
+</ol>
+
+<p><strong><em>Primechain API categories include:</em></strong></p>
+
+<ol>
+<li><p>Blockchain administration</p></li>
+
+<li><p>Entity creation &amp; permissions management</p></li>
+
+<li><p>Digital Signatures</p></li>
+
+<li><p>Data Streams</p></li>
+
+<li><p>Smart Asset Lifecycle Management</p></li>
+
+<li><p>Offer management</p></li>
+
+<li><p>Encrypted data storage</p></li>
+
+<li><p>Blockchain based authentication</p></li>
+</ol>
+
+<p><strong><em>A typical Primechain node:</em></strong>
+<img src="http://www.primechaintech.com/img/api_documentation/node2.png" alt="Primechain-node" /></p>
+
+<p><strong><em>Typical internal setup</em></strong>
+<img src="http://www.primechaintech.com/img/api_documentation/b2_internal.png" alt="Typical internal setup" /></p>
+
+<p><img src="http://www.primechaintech.com/img/api_documentation/b2_outline2.png" alt="Illustrative layout" /></p>
+
+<h1 id="2primechainapiusecases">2. Primechain-API use cases</h1>
+
+<p>A partial list of Primechain-API use cases is at: <br />
+https://github.com/Primechain/primechain-api-docs/blob/master/use-cases.MD</p>
+
+<h1 id="3documentation">3. Documentation</h1>
+
+<p>Primechain API documentation is available at: <br />
+https://github.com/Primechain/primechain-api-docs/blob/master/Documentation.md</p>
+
+<p>To try Primechain API, you can use <a href="https://install.advancedrestclient.com/install">Advance REST Client</a> or a similar tool.</p>
+
+<p><img src="http://www.primechaintech.com/img/api_documentation/rest.png" alt="Primechain-API" /></p>
+
+<h1 id="4sandbox">4. Sandbox</h1>
+
+<p>Email us on info@primechain.in for details on accessing the Primechain-API sandbox.</p>
+
+<p>To view a sample nodeJS application built on Primechain-API, email us on info@primechain.in</p>
+
+<h1 id="5aboutprimechaintechnologies">5. About Primechain Technologies</h1>
+
+<p>Primechain API are developed and maintained by <a href="http://www.primechaintech.com">Primechain™ Technologies Pvt. Ltd.</a>, a blockchain startup with the mission of building blockchains for a better world. We operate the Bankchain community of banks and maintain the Blockchain Security Controls. </p>
