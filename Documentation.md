@@ -7,7 +7,7 @@ Documentation for [Primechain API](https://github.com/Primechain/primechain-api)
 API keys authenticate access to Primechain-API powered blockchains. To generate an API key, use `get api/v1/get_api_key`. An API key must be passed in the authorization header. ([See example](http://www.primechaintech.com/img/api_documentation/sample_rest_api_client.jpg))
 
 ## 1. [Blockchain administration](https://github.com/Primechain/primechain-api-docs/blob/master/docs/Blockchain%20administration.MD)
-1. [Blockchain parameters](https://github.com/Primechain/primechain-api-docs/blob/master/docs/Blockchain%20administration.MD#1-blockchain-parameters)
+1. [Blockchain parameters](docs/Blockchain%20administration.MD#1-blockchain-parameters)
 2. [Runtime parameters](https://github.com/Primechain/primechain-api-docs/blob/master/docs/Blockchain%20administration.MD#2-runtime-parameters)
 3. [Blockchain information](https://github.com/Primechain/primechain-api-docs/blob/master/docs/Blockchain%20administration.MD#3-blockchain-information)
 4. [Memory pool information](https://github.com/Primechain/primechain-api-docs/blob/master/docs/Blockchain%20administration.MD#4-memory-pool-information)
